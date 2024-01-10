@@ -5,6 +5,7 @@ import Categories from './Categories'
 import ProductList from '../pages/ProductList'
 import ProductDetail from '../pages/ProductDetail'
 import CartDetail from '../pages/CartDetail'
+import ProductAdd from '../pages/ProductAdd'
 
 export default function Dashboard() {
   return (
@@ -20,6 +21,7 @@ export default function Dashboard() {
               <Route exact path="/products" Component={ProductList}></Route>
               <Route path="/products/:id" Component={ProductDetail}></Route>
               <Route path="/cart" Component={CartDetail}></Route>
+              <Route path="/product/add" Component={ProductAdd}></Route>
             </Routes>
           </Grid.Column>
         </Grid.Row>
